@@ -4,7 +4,7 @@ export default class Modal{
         return this.render();
     }
 
-    rebder(){
+    render(){
         this.newModal = document.createElement('div');
         this.newModal.classList.add('modal');
 
@@ -17,9 +17,23 @@ export default class Modal{
         this.newCloseButtonText = document.createTextNode('x');
         this.newCloseButton.appendChild(this.newCloseButtonText);
 
-        this.newModalContent.append(this.newCloseButton);
+        this.newAuthor = document.createElement('h1');
+        this.newAuthorText = document.createTextNode(this.props.author);
+        this.newAuthor.appendChild(this.newAuthorText);
+
+        this.newTitle = document.createElement('h2');
+        this.newTitleText = document.createTextNode(this.props.title);
+        this.newTitle.appendChild(this.newTitleText);
+
+        this.newAbout = document.createElement('p');
+        this.newAboutText = document.createTextNode(this.props.about);
+        this.newAbout.appendChild(this.newAboutText);
+
+        this.newModalContent.append(this.newCloseButton, this.newAuthor, this.newTitle, this.newAbout);
 
         this.newModal.appendChild(this.newModalContent);
+
+        return this.newModal;
     }
 
     closeModal(){
