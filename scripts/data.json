@@ -1,0 +1,46 @@
+{
+	"Nuotraukos": [
+    {
+			"id": 1,
+			"title": "Nocturna",
+			"author": "Benlo Lebev",
+			"about": "Lorem ipsum dolor fugit delectus.",
+			"source": "https://geographical.co.uk/wp-content/uploads/Night-sky-photography.jpg"
+		},
+		{
+			"id": 2,
+			"title": "Tokyo Twenty Twenty",
+			"author": "Adam Pretty",
+			"about": "Lorem ipsum dolor fugit delectus.",
+			"source": "https://imageio.forbes.com/specials-images/imageserve/621b9af66a7d6bdc36b884a7/Swimmers-at--the-Tokyo-2020-Olympics-and-Paralympics/960x0.jpg?format=jpg&width=960"
+		},
+		{
+			"id": 3,
+			"title": "Bushmeat Hunters",
+			"author": "Brent Stirton",
+			"about": "Lorem ipsum dolor fugit delectus.",
+			"source": "https://imageio.forbes.com/specials-images/imageserve/621b9b6d662498355dd5d84a/A-bushmeat-hunter-with-an-antelope-on-his-shoulders-in-Gabon-/960x0.jpg?format=jpg&width=960"
+		},
+		{
+			"id": 4,
+			"title": "Insurrection",
+			"author": "Win Mcnamee",
+			"about": "Lorem ipsum dolor fugit delectus.",
+			"source": "https://imageio.forbes.com/specials-images/imageserve/621ba093f8cc98393dd5d84a/A-man-with-the-U-S-flag-painted-on-his-face--inside-the-U-S--Senate-during-the/960x0.jpg?format=jpg&width=960"
+		},
+		{
+			"id": 5,
+			"title": "Tree",
+			"author": "Gareth Iwan Jones",
+			"about": "Lorem ipsum dolor fugit delectus.",
+			"source": "https://imageio.forbes.com/specials-images/imageserve/621b9a6cb1a4921904d5d84a/Photo-of-a-tree-in-the-sunset-/960x0.jpg?format=jpg&width=960"
+		},
+		{
+			"id": 6,
+			"title": "The Fox Tale,",
+			"author": "Milan Radiscs",
+			"about": "Lorem ipsum dolor fugit delectus.  ",
+			"source": "https://imageio.forbes.com/specials-images/imageserve/621b9a045bf5ddd3a3949c9c/A-young-vixen-fox-in-an-Hungarian-village-after-dusk-/960x0.jpg?format=jpg&width=960"
+		}
+	]
+}
