@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#contactsHeader {
+  background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactInfo {
+  display: flex;
+  gap: 20px;
+}
+
+.contacts>div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#contactsForm>form {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+}
+
+#contactsForm textarea {
+  grid-column: span 2;
+}
