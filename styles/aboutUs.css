@@ -1,2 +1,68 @@
 @import url('./main.css');
 
+nav{
+    width: auto;
+}
+
+img {
+    display: none;
+    width: 100%;
+    margin: auto;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+article{
+    display: flex;
+    align-items: center;
+}
+
+.content p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+main {
+    background-image: none;
+    height: auto;
+    width: auto;
+}
+
+footer{
+    width: auto;
+    margin: 0;
+}
+
+#aboutUs{
+    background-color: #ebebeb;
+    padding: 20px 0;
+}
+
+#aboutUs > h1 {
+    color: #000;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 25px;
+    }
+
+    img{
+        display: block;
+        
+    }
+}
+
+@media (min-width: 1400px){
+    .content {
+        width: 60%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
