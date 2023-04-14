@@ -84,3 +84,8 @@ h4 {
 }
 
 
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
