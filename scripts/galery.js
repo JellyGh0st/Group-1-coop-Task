@@ -1,47 +1,30 @@
 
-const carousel = document.querySelector('.karus');
-const korts = carousel.querySelectorAll('.kort');
+const modal = document.getElementById('modalai');
 
-const kortWidth = carousel.offsetWidth;
-const kortHeight = carousel.offsetHeight;
-const kortSize = kortHeight;
-const kortCount = korts.length;
+fetch('../scripts/data.json')
+  .then(response => response.json())
+  .then(data => {
+    data.Nuotraukos.forEach(jKort => {
+      const pav = jKort.author;
+      const apras = jKort.title;
+      const apie = jKort.about;
+      const fotke = jKort.source;
 
-const radius = Math.round((kortSize/2)/ Math.tan(Math.PI / kortCount));
-const kampas = 360 / kortCount;
+      const newMod = document.createElement('div');
+      newMod.classList.add('modalai');
+      const vardas = document.createElement('h2');
+      const vaPa = document.createTextNode(pav);
+      vardas.appendChild(vaPa);
+      const text = document.createElement('p');
+      const tur = document.createTextNode(apras);
+      text.appendChild(tur);
+      const aprasy = document.createElement('p');
+      const tekstas = document.createTextNode(apie);
+      aprasy.appendChild(tekstas);
+      const vFotke = document.createElement('img');
+      vFotke.setAttribute('src', fotke);
 
-let selectedIndex = 0;
-
-function rotateCarousel() {
-    const angle = kampas * selectedIndex * -1;
-    carousel.style.transform = `translateZ(-${radius}px) rotateX(${angle}deg)`;  
-    const kortIndex = selectedIndex < 0 ? (kortCount - ((selectedIndex * -1) % kortCount)) : (selectedIndex % kortCount);
-}
-
-function selectPrev() {
-    selectedIndex--;
-    rotateCarousel();    
-}
-
-function selectNext() {
-    selectedIndex++;
-    rotateCarousel();    
-}
-
-const prevButton = document.querySelector('.aukst');
-prevButton.addEventListener('click', selectPrev);
-
-const nextButton = document.querySelector('.zemyn');
-nextButton.addEventListener('click', selectNext);
-
-function initCarousel() {    
-    for(let i = 0; i < korts.length; i++) {
-        const kort = korts[i];
-        const kortAngle = kampas * i;
-        kort.style.transform = 'rotateX(' + -kortAngle + 'deg) translateZ(' + radius + 'px)';
-    }
-
-    rotateCarousel();
-}
-
-initCarousel();
+      newMod.append(vardas, aprasy, vFotke, text);
+      modal.appendChild(newMod);
+    });
+  });

@@ -1,118 +1,25 @@
-body{
-  background-image: url(../img/background.png);
-  background-size: cover;
+#baras{
+  width: 25%;
   height: 100vh;
+   background-color: aquamarine; 
 }
-
-.carusele {
-  display: flex;
-  align-items: center;
-  position: relative;
-  /* padding: 130px 0; */
-  perspective: 3000px;
+.modalai{
+  width: 250px;
+  height: 350px;
+  background-color: bisque;
+  padding: 10px;
+  margin: 25px;
 }
-
- /* .caruse {
-  
-  position: absolute; */
-  /* right: 60%;
-  top: 250px; */
-  /* width: 100px;
-  height: 100px; */
-  /* max-width: 250vw; */
-  /* padding-top: 50%; 
-  perspective: 1500px;
-  overflow: hidden;
-  border: 5px solid red;*/
-/* }   */
-
-.karus {
-  
-  width: 40vw;
-  height: 50vh;
-  /* margin: 0;
-  padding: 0; */
-  position: absolute;
-  right: 15%;
-  top: 175px;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* border: 5px solid rgb(255, 0, 149); */
-}
-.ko1{
-  background-image: url(../img/China/_DSF5057.jpg);
-}
-.ko2{
-  background-image: url(../img/africa/DSCF7779.jpg);
-}
-.ko3{
-  background-image: url(../img/Thai/ltb3.jpg); 
-}
-.ko4{
-  background-image: url(../img/Jordan/Wadi\ Rum\ žvaigždė.jpg); 
-}
-.ko5{
-  background-image: url(../img/Marocco/_DSF1167.jpg); 
-}
-.ko6{
-  background-image: url(../img/Island/_DSF9404.jpg); 
-}
-
-.kort {
-  position: absolute;
-  background-position: center center;
-  background-size: cover;
+.modalai > img {
   width: 100%;
-  height: 90%;
-  border: 3px solid white;
-  border-radius: 25px;
-  font-weight: bold;
-  text-align: center;
-  font-size: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  padding: 5px 15px;
-  justify-content: top;
-  color: rgb(156, 0, 0);
-  counter-increment: list-counter;  background-color: rgba(128, 128, 128, 0.75);
+  /* object-fit: cover; */
 }
+#modalai{
+  display: flex;
+  flex-wrap: wrap;
 
-  .mygt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 2.5%;
-    top: 300px;
-  }
-  
-  .aukst, .zemyn {
-    margin: 5px 0;
-    padding: 5px;
-    width: 50px;
-    height: 75px;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 2rem;
-    border: 3px solid goldenrod;
-    border-radius: 15px;
-    background-color: #444;
-  }
-  
-  .aukst:active, .zemyn:active {
-    outline: none;
-    box-shadow: 0 0 6px 3px goldenrod;
-  }
+}
+#galerija{
+  display: flex;
 
-.kort:nth-child(1) { transform: rotateX(  0deg) translateZ(288px); }
-.kort:nth-child(2) { transform: rotateX( 40deg) translateZ(288px); }
-.kort:nth-child(3) { transform: rotateX( 80deg) translateZ(288px); }
-.kort:nth-child(4) { transform: rotateX(120deg) translateZ(288px); }
-.kort:nth-child(5) { transform: rotateX(160deg) translateZ(288px); }
-.kort:nth-child(6) { transform: rotateX(200deg) translateZ(288px); }
+}
