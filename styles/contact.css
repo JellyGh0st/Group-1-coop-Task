@@ -4,7 +4,7 @@
 }
 
 #contactsHeader {
-  background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e');
+  background-image: linear-gradient(to bottom, rgba(27, 27, 31, 0), rgb(27, 27, 31)), url('http://themes.wpthemebooster.com/oculus/wp-content/themes/oculus/assets/images/header-bg.jpg');
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -20,17 +20,70 @@
   gap: 20px;
 }
 
+#contactInfo>div:first-child {
+  background-color: black;
+  color: white;
+  width: 50%;
+}
+
+#contactInfo>div {
+  padding: 30px 100px;
+}
+
+#contactInfo h2 {
+  font-weight: 400;
+  padding: 15px 0;
+}
+
+#contactInfo>div>p {
+  padding-bottom: 30px;
+}
+
+.contacts {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.contacts h3,
+.contacts i {
+  color: #c19b77;
+}
+
+.contacts h3 {
+  font-weight: 400;
+}
+
 .contacts>div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 10px;
 }
 
 #contactsForm>form {
-  display: grid;
-  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+#contactsForm input:not(input[type='submit']),
+#contactsForm textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 10px;
 }
 
 #contactsForm textarea {
-  grid-column: span 2;
+  height: 70px;
+}
+
+#contactsForm input[type='submit'] {
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 20px;
 }
