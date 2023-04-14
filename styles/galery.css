@@ -1,5 +1,6 @@
 body{
   background-color: dimgray;
+  position: relative;
 }
 #baras{
   width: 200px;
@@ -31,4 +32,23 @@ body{
 .visaInfo{
   color: white;
   padding: 0 15px;
+}
+
+.modal{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.637);
+}
+
+.modalContent{
+  background-color: white;
+
+  width: 50%;
+  height: 50%;
 }
