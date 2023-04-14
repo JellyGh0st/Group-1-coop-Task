@@ -31,26 +31,27 @@ fetch('../scripts/data.json')
       modal.appendChild(newMod);
 
       vFotke.addEventListener('click', () => {
-        newMod.removeChild(vFotke);
+        document.body.append(new Modal(jKort));
+        // newMod.removeChild(vFotke);
 
-        const visaInfo = document.createElement('div');
-        visaInfo.classList.add('visaInfo');
-        visaInfo.append(vardas);
-        visaInfo.append(text);
-        visaInfo.append(aprasy);
-        newMod.append(visaInfo);
+        // const visaInfo = document.createElement('div');
+        // visaInfo.classList.add('visaInfo');
+        // visaInfo.append(vardas);
+        // visaInfo.append(text);
+        // visaInfo.append(aprasy);
+        // newMod.append(visaInfo);
 
-        const closeModal = () => {
-          newMod.removeChild(visaInfo);
-          newMod.append(vFotke);
-          document.removeEventListener('spaustEsc', onEscKeyDown);
-        };
-        const onEscKeyDown = event => {
-          if (event.key === 'Escape') {
-            closeModal();
-          }};
-        document.addEventListener('spaustEsc', onEscKeyDown);
-        visaInfo.addEventListener('click', closeModal);
+        // const closeModal = () => {
+        //   newMod.removeChild(visaInfo);
+        //   newMod.append(vFotke);
+        //   document.removeEventListener('spaustEsc', onEscKeyDown);
+        // };
+        // const onEscKeyDown = event => {
+        //   if (event.key === 'Escape') {
+        //     closeModal();
+        //   }};
+        // document.addEventListener('spaustEsc', onEscKeyDown);
+        // visaInfo.addEventListener('click', closeModal);
       });
     });
   });
