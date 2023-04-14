@@ -11,6 +11,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 1400px;
 }
 
 nav ul {
@@ -50,7 +51,6 @@ main h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 300px;
   height: 50vh;
   margin:auto;
   text-align: center;
@@ -60,6 +60,8 @@ main h1 {
 footer {
   padding: 25px 15px;
   font-size: 0.6rem;
+  max-width: 1400px;
+  margin: auto;
 }
 
 h4 {
@@ -76,10 +78,8 @@ h4 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-start;
-  gap: 10px;
+  justify-content: space-around;
+  gap: 15px;
 }
 
 .middle ul, .right ul {
