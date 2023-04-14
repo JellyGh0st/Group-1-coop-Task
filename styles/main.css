@@ -1,0 +1,86 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+nav {
+  width: 1400px;
+  padding:10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap:10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  
+}
+
+main {
+  background-image: url('https://www.shutterstock.com/image-illustration/empty-white-panels-front-brick-260nw-270274256.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+main h1 {
+  color: rgb(255, 255, 255);
+  font-size: 7rem;
+}
+
+footer {
+  width: 1400px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.left {
+  width: 500px
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.middle ul, .right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.middle li {
+  margin: 7px 0;
+}
+
+.right ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+.right i {
+  color:  black;
+}
+
+
