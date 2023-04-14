@@ -1,10 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap');
+
 * {
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+nav {
+  width: 100vw;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+main h1 {
+  color: rgb(255, 255, 255);
+  font-size: 7rem;
+}
+
+footer {
+  width: 1400px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.left {
+  width: 500px
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.middle ul,
+.right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.middle li {
+  margin: 7px 0;
+}
+
+.right ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+.right i {
+  color: black;
 }
 
 #contactsHeader {
-  background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e');
+  background-image: url('https://images.unsplash.com/photo-1520531158340-44015069e78e');
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -15,22 +84,86 @@
   align-items: center;
 }
 
+#contactsHeader p {
+  color: white;
+  margin: 20px 0;
+}
+
 #contactInfo {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+}
+
+#contactInfo>div:first-child {
+  background-color: black;
+  color: white;
+}
+
+#contactInfo>div {
+  padding: 30px 100px;
+  flex: 1;
+}
+
+#contactInfo h2 {
+  font-weight: 500;
+  padding: 15px 0;
+}
+
+#contactInfo>div>p {
+  padding-bottom: 40px;
+}
+
+.contacts {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.contacts h3,
+.contacts i {
+  color: #c19b77;
+}
+
+.contacts h3 {
+  font-weight: 400;
 }
 
 .contacts>div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 10px;
 }
 
 #contactsForm>form {
-  display: grid;
-  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+#contactsForm input:not(input[type='submit']),
+#contactsForm textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 10px;
 }
 
 #contactsForm textarea {
-  grid-column: span 2;
+  height: 70px;
+}
+
+#contactsForm input[type='submit'] {
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  #contactInfo {
+    flex-direction: row;
+  }
 }
