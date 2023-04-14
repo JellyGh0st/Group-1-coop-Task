@@ -4,7 +4,7 @@
 }
 
 #contactsHeader {
-  background-image: linear-gradient(to bottom, rgba(27, 27, 31, 0), rgb(27, 27, 31)), url('http://themes.wpthemebooster.com/oculus/wp-content/themes/oculus/assets/images/header-bg.jpg');
+  background-image: url('https://images.unsplash.com/photo-1520531158340-44015069e78e');
   background-size: cover;
   background-position: center;
   height: 50vh;
