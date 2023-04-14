@@ -1,0 +1,25 @@
+#baras{
+  width: 25%;
+  height: 100vh;
+   background-color: aquamarine; 
+}
+.modalai{
+  width: 250px;
+  height: 350px;
+  background-color: bisque;
+  padding: 10px;
+  margin: 25px;
+}
+.modalai > img {
+  width: 100%;
+  /* object-fit: cover; */
+}
+#modalai{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+#galerija{
+  display: flex;
+
+}
