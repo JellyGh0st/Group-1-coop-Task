@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap');
+
 body{
   background-color: dimgray;
   position: relative;
@@ -75,12 +77,24 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.637);
+  background-color: rgba(31, 31, 31, 0.637);
 }
 
 .modalContent{
-  background-color: white;
-
+  background-color: rgb(47, 47, 47);
+  padding: 25px;
   width: 50%;
   height: 50%;
+  color: rgb(248, 249, 250);
+}
+
+footer {
+  width: 100vw;
+  padding: 10px;
+  margin: 0 auto;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
