@@ -1,14 +1,46 @@
 body{
   background-color: dimgray;
   position: relative;
+  font-family: 'Schibsted Grotesk', sans-serif;
+  margin: 0;
 }
-#baras{
+nav {
+  width: 100%;
+  height: fit-content;
+  /* padding:10px; */
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}
+nav h1{
+  font-size: 2rem;
+  margin: 20px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap:10px;
+  padding: 0 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+section{
+  display: flex;
+  flex-direction: column;
+}
+/* #baras{
   width: 200px;
   height: 100vh;
   color: white;
   font-size: 1.5rem;
    background-color: rgb(41, 41, 41); 
-}
+} */
 .modalai {
   width: 300px;
   height: auto;
