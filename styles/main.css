@@ -21,15 +21,20 @@ nav ul {
   list-style-type: none;
   align-items: center;
   padding: 0;
-  gap: 10px;
+  gap: 5px;
 }
 
 nav h1 {
+  font-size: 28px;
   font-weight: 500;
 }
 
 nav ul li a {
   text-decoration: none;
+}
+
+nav ul li:nth-child(1){
+  display: none;
 }
 
 .mainDiv {
@@ -114,6 +119,19 @@ h3 {
 
 @media (min-width: 668px) {
 
+  nav h1 {
+    font-size: 34px;
+    font-weight: 500;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li:nth-child(1){
+    display: unset;
+  }
+
   .left {
     width: 300px;
   }
@@ -139,9 +157,22 @@ h3 {
 
 @media only screen and (min-width: 992px) {
 
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav h1 {
+    font-size: 34px;
+    font-weight: 500;
+  }
+
   nav ul {
     font-size: 1.4rem;
   }
+
+  
+  
 
   .mainDiv {
     min-height: 60vh;
