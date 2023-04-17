@@ -26,7 +26,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-main h1 {
+.mainDiv h1 {
   color: rgb(255, 255, 255);
   font-size: 7rem;
 }
@@ -48,8 +48,7 @@ footer {
   gap: 20px;
 }
 
-.middle ul,
-.right ul {
+.middle ul, .right ul {
   list-style-type: none;
   padding: 0;
 }
