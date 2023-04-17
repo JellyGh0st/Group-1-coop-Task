@@ -1,9 +1,5 @@
 @import url('./main.css');
 
-nav{
-    width: auto;
-}
-
 img {
     display: none;
     width: 100%;
@@ -29,11 +25,6 @@ main {
     background-image: none;
     height: auto;
     width: auto;
-}
-
-footer{
-    width: auto;
-    margin: 0;
 }
 
 #aboutUs{
