@@ -1,48 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap');
+@import url('./main.css');
 
 body{
-  background-color: dimgray;
+ 
   position: relative;
-  font-family: 'Schibsted Grotesk', sans-serif;
+ 
   margin: 0;
 }
-nav {
-  width: 100%;
-  height: fit-content;
-  /* padding:10px; */
-  margin: 0;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-}
-nav h1{
-  font-size: 2rem;
-  margin: 20px;
-}
-nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  gap:10px;
-  padding: 0 25px;
-}
-nav ul li a {
-  text-decoration: none;
-  color: black;
-}
-section{
-  display: flex;
-  flex-direction: column;
-}
-/* #baras{
-  width: 200px;
-  height: 100vh;
-  color: white;
-  font-size: 1.5rem;
-   background-color: rgb(41, 41, 41); 
-} */
+
 .modalai {
   width: 300px;
   height: auto;
@@ -52,15 +16,14 @@ section{
 }
 .modalai > img {
   width: 100%;
-  /* object-fit: cover; */
+  
 }
 #modalai{
   display: flex;
   flex-wrap: wrap;
-
-}
-#galerija{
-  display: flex;
+  font-family: 'Schibsted Grotesk', sans-serif;
+  background-color: dimgray;
+  /* flex-direction: column; */
 
 }
 .visaInfo{
@@ -86,15 +49,4 @@ section{
   width: 50%;
   height: 50%;
   color: rgb(248, 249, 250);
-}
-
-footer {
-  width: 100vw;
-  padding: 10px;
-  margin: 0 auto;
-}
-.copyright {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
