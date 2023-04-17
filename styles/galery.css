@@ -18,12 +18,12 @@ body{
   width: 100%;
   
 }
+
 #modalai{
   display: flex;
   flex-wrap: wrap;
   font-family: 'Schibsted Grotesk', sans-serif;
   background-color: dimgray;
-  /* flex-direction: column; */
 
 }
 .visaInfo{

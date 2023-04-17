@@ -18,15 +18,15 @@ export default class Modal{
         this.newCloseButton.appendChild(this.newCloseButtonText);
 
         this.newAuthor = document.createElement('h1');
-        this.newAuthorText = document.createTextNode(this.props.author);
+        this.newAuthorText = document.createTextNode(`Author: ${this.props.author}`);
         this.newAuthor.appendChild(this.newAuthorText);
 
         this.newTitle = document.createElement('h2');
-        this.newTitleText = document.createTextNode(this.props.title);
+        this.newTitleText = document.createTextNode(`Title: ${this.props.title}`);
         this.newTitle.appendChild(this.newTitleText);
 
         this.newAbout = document.createElement('p');
-        this.newAboutText = document.createTextNode(this.props.about);
+        this.newAboutText = document.createTextNode(`About: ${this.props.about}`);
         this.newAbout.appendChild(this.newAboutText);
 
         this.newModalContent.append(this.newCloseButton, this.newAuthor, this.newTitle, this.newAbout);
