@@ -9,7 +9,6 @@
   background-size: cover;
   background-position: center;
   height: 50vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +17,7 @@
 
 #contactsHeader p {
   color: white;
-  margin: 20px 0;
+  margin: 20px;
 }
 
 #contactInfo {
