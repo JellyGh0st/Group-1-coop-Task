@@ -33,7 +33,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-main {
+.mainDiv {
   background-image: url('https://rare-gallery.com/uploads/posts/925855-black-dark-texture.jpg');
   background-size: cover;
   background-position: center;
@@ -43,10 +43,9 @@ main {
   min-height: 180px;
 }
 
-main h1 {
+.mainDiv h1 {
   font-size: 2rem;
   margin: 5px;
-  
 }
 
 #mainContain {
@@ -71,7 +70,6 @@ footer {
 h3 {
   margin: 0;
   font-weight: 700;
-  
 }
 
 .left {
@@ -80,9 +78,6 @@ h3 {
 .left p {
   overflow-wrap: break-word;
 }
-
-
-
 
 .flex {
   display: flex;
@@ -109,6 +104,7 @@ h3 {
   flex-direction: column;
   align-items:center;
 }
+
 .right ul {
   display: flex;
   flex-direction: row;
