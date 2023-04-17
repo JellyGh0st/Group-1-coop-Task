@@ -1,14 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap');
+
 body{
   background-color: dimgray;
   position: relative;
+  font-family: 'Schibsted Grotesk', sans-serif;
+  margin: 0;
 }
-#baras{
+nav {
+  width: 100%;
+  height: fit-content;
+  /* padding:10px; */
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}
+nav h1{
+  font-size: 2rem;
+  margin: 20px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap:10px;
+  padding: 0 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+section{
+  display: flex;
+  flex-direction: column;
+}
+/* #baras{
   width: 200px;
   height: 100vh;
   color: white;
   font-size: 1.5rem;
    background-color: rgb(41, 41, 41); 
-}
+} */
 .modalai {
   width: 300px;
   height: auto;
@@ -43,12 +77,24 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.637);
+  background-color: rgba(31, 31, 31, 0.637);
 }
 
 .modalContent{
-  background-color: white;
-
+  background-color: rgb(47, 47, 47);
+  padding: 25px;
   width: 50%;
   height: 50%;
+  color: rgb(248, 249, 250);
+}
+
+footer {
+  width: 100vw;
+  padding: 10px;
+  margin: 0 auto;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
