@@ -23,6 +23,8 @@ body{
   flex-wrap: wrap;
   font-family: 'Schibsted Grotesk', sans-serif;
   background-color: dimgray;
+  box-sizing: border-box;
+  justify-content: center;
 
 }
 .visaInfo{
