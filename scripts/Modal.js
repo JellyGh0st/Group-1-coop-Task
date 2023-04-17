@@ -11,12 +11,15 @@ export default class Modal{
         this.newModalContent = document.createElement('div');
         this.newModalContent.classList.add('modalContent');
 
+        
         this.newCloseButton = document.createElement('button');
         this.closeModal();
         this.newCloseButton.classList.add('closeModal');
         this.newCloseButtonText = document.createTextNode('x');
         this.newCloseButton.appendChild(this.newCloseButtonText);
 
+        this.newInfo = document.createElement('div');
+        
         this.newAuthor = document.createElement('h1');
         this.newAuthorText = document.createTextNode(`Author: ${this.props.author}`);
         this.newAuthor.appendChild(this.newAuthorText);
@@ -29,7 +32,12 @@ export default class Modal{
         this.newAboutText = document.createTextNode(`About: ${this.props.about}`);
         this.newAbout.appendChild(this.newAboutText);
 
-        this.newModalContent.append(this.newCloseButton, this.newAuthor, this.newTitle, this.newAbout);
+        this.newInfo.append(this.newAuthor, this.newTitle, this.newAbout);
+
+        this.newPic = document.createElement('img');
+        this.newPic.setAttribute('src', this.props.source);
+
+        this.newModalContent.append(this.newCloseButton, this.newInfo, this.newPic);
 
         this.newModal.appendChild(this.newModalContent);
 
