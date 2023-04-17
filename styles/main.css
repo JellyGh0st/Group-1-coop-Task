@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Inconsolata', monospace;
-  font-size: 0.8rem;
+  font-size: 17px;
 }
 
 nav {
@@ -21,16 +21,20 @@ nav ul {
   list-style-type: none;
   align-items: center;
   padding: 0;
-  gap: 10px;
+  gap: 5px;
 }
 
 nav h1 {
-  font-family: 'Cutive Mono', monospace;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 nav ul li a {
   text-decoration: none;
+}
+
+nav ul li:nth-child(1){
+  display: none;
 }
 
 .mainDiv {
@@ -57,12 +61,10 @@ nav ul li a {
   margin:auto;
   text-align: center;
   max-width: 350px;
-  
 }
 
 footer {
   padding: 20px;
-  font-size: 0.6rem;
   max-width: 1400px;
   margin: auto;
 }
@@ -72,19 +74,14 @@ h3 {
   font-weight: 700;
 }
 
-.left {
-  width: 180px;
-}
 .left p {
   overflow-wrap: break-word;
 }
 
 .flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 8px;
 }
 
 .middle ul, .right ul {
@@ -96,13 +93,11 @@ h3 {
   margin: 7px 0;
 }
 .middle li i {
-  color: rgb(122, 165, 126);
+  color: #7aa57e;
 }
 
 .right {
-  display: flex;
-  flex-direction: column;
-  align-items:center;
+  align-self: center;
 }
 
 .right ul {
@@ -112,7 +107,7 @@ h3 {
 }
 
 .right i {
-  color:  rgb(77, 81, 144);
+  color:  #4d5190;
 }
 
 .copyright {
@@ -120,5 +115,64 @@ h3 {
   align-items: center;
   justify-content: center;
   color: #8f8f8f;
-  margin-top: 50px;
+}
+
+@media (min-width: 668px) {
+
+  nav h1 {
+    font-size: 34px;
+    font-weight: 500;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li:nth-child(1){
+    display: unset;
+  }
+
+  .left {
+    width: 300px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .right {
+    align-self: center;
+    order: 2;
+  }
+
+  .middle {
+    order: 3;
+  }
+ 
+}
+
+@media only screen and (min-width: 992px) {
+
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav h1 {
+    font-size: 34px;
+    font-weight: 500;
+  }
+
+  nav ul {
+    font-size: 1.4rem;
+  }
+
+  .mainDiv {
+    min-height: 60vh;
+  }
+
 }
